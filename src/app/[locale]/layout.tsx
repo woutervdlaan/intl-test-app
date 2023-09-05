@@ -23,12 +23,10 @@ export default async function RootLayout({
   }
 
   return (
-    <TestContextProvider>
       <html lang={locale}>
         <NextIntlClientProvider locale={locale} messages={messages}>
           <body>{children}</body>
         </NextIntlClientProvider>
       </html>
-    </TestContextProvider>
   );
 }
